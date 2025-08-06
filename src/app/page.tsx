@@ -13,6 +13,7 @@ export default function Home() {
         <div className="absolute inset-0 flex justify-center items-center flex-col">
           <h1 className="mb-[31.31px]">
             <img
+              fetchPriority="high"
               src="/image/2025ausgcon.png"
               width={706}
               height={332.69}
@@ -25,7 +26,8 @@ export default function Home() {
           <div className="mb-[86.98px]">
             <Timer />
           </div>
-          <div>
+          <div className="mb-[43.53px]">
+            {/* TODO : 참가하러가기 링크수정 */}
             <Link
               href="/a"
               className="flex w-[308px] h-[69.474px] px-[55.579px] py-[6.947px] justify-center items-center gap-[9.263px] rounded-[23.158px] bg-white text-[24px] leading-[32.421px] text-[#141414]"
@@ -35,6 +37,15 @@ export default function Home() {
                 →
               </b>
             </Link>
+          </div>
+          <div>
+            <img
+              src="/image/ausg_logo.svg"
+              width="167"
+              height="30"
+              loading="lazy"
+              fetchPriority="low"
+            />
           </div>
         </div>
       </div>
