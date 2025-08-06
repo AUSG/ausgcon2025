@@ -3,30 +3,28 @@ import Timer from "../timer/Timer";
 
 const MainSection = () => {
   return (
-    <section className="relative">
-      <img src="/image/main_bg.png" alt="배경" />
-
-      <div className="absolute inset-0 flex items-center flex-col w-full mt-[69px]">
+    <section className="relative min-h-screen w-full bg-[url('/image/main_bg.png')] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 mt-[69px] flex w-full flex-col items-center">
         <div className="w-1/2">
           <h1 className="mb-[31.31px] flex">
             <img
               fetchPriority="high"
               src="/image/2025ausgcon.png"
-              className="w-full h-auto"
+              className="h-auto w-full"
               alt="2025 AUSGCON"
             />
           </h1>
-          <div className="text-white text-4xl font-normal mb-12 w-full flex justify-center">
+          <div className="mb-12 flex w-full justify-center text-4xl font-normal text-white">
             2025.09.13 AWS KOREA 센터필드
           </div>
           <div className="mb-[86.98px]">
             <Timer />
           </div>
-          <div className="mb-[43.53px] flex justify-center items-center ">
+          <div className="mb-[43.53px] flex items-center justify-center">
             {/* TODO : 참가하러가기 링크수정 */}
             <Link
               href="/a"
-              className="px-[55.579px] py-[6.947px] gap-[9.263px] flex justify-center items-center rounded-[8px] bg-white text-[24px] leading-[32.421px] text-[#141414]"
+              className="flex items-center justify-center gap-[9.263px] rounded-[8px] bg-white px-[55.579px] py-[6.947px] text-[24px] leading-[32.421px] text-[#141414]"
             >
               참가하러 가기
               <b className="text-[32px]" style={{ fontFamily: "Pretendard" }}>
@@ -34,7 +32,7 @@ const MainSection = () => {
               </b>
             </Link>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <img
               src="/image/ausg_logo.svg"
               width="167"
