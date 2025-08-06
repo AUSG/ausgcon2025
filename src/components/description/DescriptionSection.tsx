@@ -1,13 +1,13 @@
 const DescriptionSection = () => {
   return (
     <section className="relative h-[41vh] w-full bg-white bg-[url('/image/description_bg.svg')] bg-cover bg-center bg-no-repeat">
-      <div className="items-left absolute top-[30px] right-[5%] flex h-fit w-fit flex-col text-left">
-        <p className="mb-[41px] text-[26px]">
+      <div className="items-left absolute top-[95px] left-1/2 flex h-fit w-fit translate-x-[40px] flex-col text-left">
+        <p className="mb-[41px] text-[30px]">
           대학생과 주니어를 위한 IT 컨퍼런스!
           <br />
           “AUSGCON”(아우쓱콘)을 소개합니다
         </p>
-        <p className="font-pretendard text-[18px]">
+        <p className="font-pretendard text-[22px]">
           AUSGCON은 “IT에 대한 열정이 있는 사람들을 위한 교류의 장”이라는
           <br />
           컨셉으로 열리는 오프라인 기술 컨퍼런스입니다. 주로 대학생 및 개발자를

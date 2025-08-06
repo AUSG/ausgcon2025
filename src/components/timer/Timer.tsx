@@ -1,6 +1,6 @@
 const Timer = () => {
   return (
-    <div className="bg-white/20 w-full flex justify-center items-center ">
+    <div className="flex h-[288px] w-full items-center justify-center bg-white/20">
       타이머
     </div>
   );

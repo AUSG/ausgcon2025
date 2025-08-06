@@ -3,14 +3,14 @@ import Timer from "../timer/Timer";
 
 const MainSection = () => {
   return (
-    <section className="relative min-h-screen w-full bg-[url('/image/main_bg.png')] bg-cover bg-center bg-no-repeat">
+    <section className="relative h-screen min-h-[1100px] w-full bg-[url('/image/main_bg.png')] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 mt-[69px] flex w-full flex-col items-center">
         <div className="w-1/2">
-          <h1 className="mb-[31.31px] flex">
+          <h1 className="mb-[31.31px] flex justify-center">
             <img
               fetchPriority="high"
               src="/image/2025ausgcon.png"
-              className="h-auto w-full"
+              className="h-[30vh] w-fit"
               alt="2025 AUSGCON"
             />
           </h1>
