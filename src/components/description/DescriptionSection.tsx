@@ -1,6 +1,6 @@
 const DescriptionSection = () => {
   return (
-    <section className="relative h-[41vh] w-full bg-white bg-[url('/image/description_bg.svg')] bg-cover bg-center bg-no-repeat">
+    <section className="relative h-[450px] w-full bg-white bg-[url('/image/description_bg.svg')] bg-cover bg-center bg-no-repeat">
       <div className="items-left absolute top-1/2 left-1/2 flex h-fit w-[44vw] translate-x-[40px] -translate-y-1/2 flex-col text-left">
         <p className="mb-[41px] text-3xl">
           대학생과 주니어를 위한 IT 컨퍼런스!
