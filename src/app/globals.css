@@ -13,11 +13,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: bold;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-pretendard: "Pretendard", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

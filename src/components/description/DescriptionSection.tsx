@@ -8,7 +8,7 @@ const DescriptionSection = () => {
           <br />
           “AUSGCON”(아우쓱콘)을 소개합니다
         </p>
-        <p className="text-[18px]">
+        <p className="text-[18px] font-pretendard">
           AUSGCON은 “IT에 대한 열정이 있는 사람들을 위한 교류의 장”이라는
           <br />
           컨셉으로 열리는 오프라인 기술 컨퍼런스입니다. 주로 대학생 및 개발자를

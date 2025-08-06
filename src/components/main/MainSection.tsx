@@ -16,7 +16,7 @@ const MainSection = () => {
               alt="2025 AUSGCON"
             />
           </h1>
-          <div className="text-white text-4xl font-normal mb-12 w-full">
+          <div className="text-white text-4xl font-normal mb-12 w-full flex justify-center">
             2025.09.13 AWS KOREA 센터필드
           </div>
           <div className="mb-[86.98px]">
