@@ -16,7 +16,7 @@ const SPEAKER_LIST = [
   { Component: ImageSquare, src: "/image/testImage.jpeg" },
 ];
 
-const WIDTH = 274;
+const WIDTH = 274; // TODO : 반응형 적용해야함.
 
 const SpeakerSection = () => {
   return (

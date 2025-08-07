@@ -30,7 +30,22 @@ const KakaoMap = ({
         level: 3, // 확대 수준
       };
 
-      new window.kakao.maps.Map(container, options); // 지도 생성
+      const map = new window.kakao.maps.Map(container, options); // 지도 생성
+
+      const markerPosition = new window.kakao.maps.LatLng(lat, lng);
+
+      const imageSrc = "/image/map_flag.png";
+      const imageSize = new window.kakao.maps.Size(252, 317);
+      const markerImage = new window.kakao.maps.MarkerImage(
+        imageSrc,
+        imageSize,
+      );
+
+      const marker = new window.kakao.maps.Marker({
+        position: markerPosition,
+        map: map, // 여기서 map은 위에서 생성한 지도 객체
+        image: markerImage,
+      });
     }
   }, []);
 
