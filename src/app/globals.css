@@ -36,6 +36,12 @@
   }
 }
 
+@layer base {
+  button:hover {
+    cursor: pointer;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
