@@ -55,6 +55,7 @@ const KakaoMap = ({
       style={{
         width: width,
         height: height,
+        borderRadius: "24px",
       }}
     />
   );
