@@ -1,9 +1,14 @@
-const InstagramSvg = () => {
+type InstagramSvgProps = {
+  width?: number | string;
+  height?: number | string;
+};
+
+const InstagramSvg = ({ width = 34, height = 34 }: InstagramSvgProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="34"
-      height="34"
+      width={width}
+      height={height}
       viewBox="0 0 34 34"
       fill="none"
       className="stroke-white"

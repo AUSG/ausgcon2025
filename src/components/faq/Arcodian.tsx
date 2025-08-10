@@ -16,17 +16,17 @@ const Arcodian = ({ title, description }: TProps) => {
       <div className="font-pretendard text-white">
         <button
           type="button"
-          className="flex w-full items-center justify-between px-12"
+          className="flex w-full items-center justify-between px-9"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           <div className="flex items-center">
             <span className="pr-4">
-              <QuestionMark />
+              <QuestionMark width={30} />
             </span>
-            <span className="py-9 text-[34px] font-bold">{title}</span>
+            <span className="py-7 text-2xl font-bold">{title}</span>
           </div>
-          <div className={isOpen ? "rotate-180" : ""}>
-            <UpArrow />
+          <div className={`${isOpen ? "rotate-180" : ""}`}>
+            <UpArrow width={24} />
           </div>
         </button>
 

@@ -6,28 +6,28 @@ import LinkedInSvg from "../svg/LinkedInSvg";
 const Footer = () => {
   return (
     <footer className="">
-      <div className="flex items-center justify-between px-12 py-9">
+      <div className="flex items-center justify-between px-12 pt-12 pb-8">
         <img
           src="/image/ausg_logo.svg"
-          className="h-auto w-[128px] lg:w-[167px]"
+          className="h-auto w-[128px] lg:w-[148px]"
           loading="lazy"
           fetchPriority="low"
         />
-        <span className="font-pretendard text-2xl text-white">
+        <span className="font-pretendard text-xl text-white">
           @ AUSG 2025 ALL RIGHTS RESERVED
         </span>
         <div className="flex gap-7">
           <a target="_blank" href="https://ausg.me/">
-            <HomeSvg />
+            <HomeSvg width={28} height={28} />
           </a>
           <a target="_blank" href="https://www.facebook.com/ausgkr">
-            <FacebookSvg />
+            <FacebookSvg width={28} height={28} />
           </a>
           <a target="_blank" href="https://www.instagram.com/ausg.awskrug">
-            <InstagramSvg />
+            <InstagramSvg width={28} height={28} />
           </a>
           <a target="_blank" href="https://www.linkedin.com/company/ausg-kr/">
-            <LinkedInSvg />
+            <LinkedInSvg width={28} height={28} />
           </a>
         </div>
       </div>

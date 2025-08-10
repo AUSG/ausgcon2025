@@ -1,9 +1,14 @@
-const FacebookSvg = () => {
+type FacebookSvgProps = {
+  width?: number | string;
+  height?: number | string;
+};
+
+const FacebookSvg = ({ width = 34, height = 34 }: FacebookSvgProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="34"
-      height="34"
+      width={width}
+      height={height}
       viewBox="0 0 34 34"
       fill="none"
       className="stroke-white"

@@ -35,7 +35,7 @@ const KakaoMap = ({
       const markerPosition = new window.kakao.maps.LatLng(lat, lng);
 
       const imageSrc = "/image/map_flag.png";
-      const imageSize = new window.kakao.maps.Size(252, 317);
+      const imageSize = new window.kakao.maps.Size(168, 211);
       const markerImage = new window.kakao.maps.MarkerImage(
         imageSrc,
         imageSize,
@@ -53,8 +53,8 @@ const KakaoMap = ({
     <div
       id="map"
       style={{
-        width: width,
-        height: height,
+        width: "100%",
+        height: "100%",
         borderRadius: "24px",
       }}
     />

@@ -1,27 +1,27 @@
 import KakaoMap from "./KakaoMap";
 
-const WIDTH = 1606;
+const WIDTH = 1071;
 
 const MapSection = () => {
   return (
     <section className="mt-24 mb-16 flex flex-col items-center">
-      <h2 className="mb-28 text-center text-[70px] text-white">
-        HOW TO FIND US
-      </h2>
-      <KakaoMap
-        width={WIDTH}
-        height={815}
-        lat={37.50359690358887}
-        lng={127.04153904751364}
-      />
+      <h2 className="mb-28 text-center text-6xl text-white">HOW TO FIND US</h2>
+      <div className="h-[543px] w-[1071px]">
+        <KakaoMap
+          width={WIDTH}
+          height={815}
+          lat={37.50359690358887}
+          lng={127.04153904751364}
+        />
+      </div>
       <div
         style={{ width: WIDTH }}
         className="flex flex-col text-start text-white"
       >
         <div className="mt-11">
-          <p className="text-4xl">AWS KOREA 센터필드</p>
+          <p className="text-3xl">AWS KOREA 센터필드</p>
         </div>
-        <div className="font-pretendard mt-6 text-3xl">
+        <div className="font-pretendard mt-6 text-2xl">
           <div className="flex gap-9 pb-3">
             <span className="font-extrabold">지하철</span>
             <p className="font-medium">

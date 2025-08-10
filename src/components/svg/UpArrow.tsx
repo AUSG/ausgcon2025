@@ -1,8 +1,13 @@
-const UpArrow = () => {
+type UpArrowProps = {
+  width?: number | string;
+  height?: number | string;
+};
+
+const UpArrow = ({ width = 38, height = 22 }: UpArrowProps) => {
   return (
     <svg
-      width="38"
-      height="22"
+      width={width}
+      height={height}
       viewBox="0 0 38 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

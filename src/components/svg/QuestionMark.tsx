@@ -1,8 +1,13 @@
-const QuestionMark = () => {
+type QuestionMarkProps = {
+  width?: number | string;
+  height?: number | string;
+};
+
+const QuestionMark = ({ width = 35, height = 35 }: QuestionMarkProps) => {
   return (
     <svg
-      width="35"
-      height="35"
+      width={width}
+      height={height}
       viewBox="0 0 35 35"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
