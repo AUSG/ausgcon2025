@@ -9,8 +9,10 @@ const ScheduleSection = () => {
           *더미텍스트* 아우쓱콘의 일정들을 소개합니다.
         </p>
       </div>
-      <div className="mt-[70px] flex justify-center px-4">
-        <ScheduleTable />
+      <div className="flex justify-center">
+        <div className="mt-[70px] flex w-[1071px] justify-center px-4">
+          <ScheduleTable />
+        </div>
       </div>
     </section>
   );

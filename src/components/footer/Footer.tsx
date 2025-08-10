@@ -6,7 +6,7 @@ import LinkedInSvg from "../svg/LinkedInSvg";
 const Footer = () => {
   return (
     <footer className="">
-      <div className="flex items-center justify-between px-12 pt-12 pb-8">
+      <div className="flex items-center justify-between px-12 py-8">
         <img
           src="/image/ausg_logo.svg"
           className="h-auto w-[128px] lg:w-[148px]"
