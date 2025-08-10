@@ -1,6 +1,8 @@
+import ContactSection from "@/components/contact/ContactSection";
 import Contact from "@/components/contact/TallyForm";
 import DescriptionSection from "@/components/description/DescriptionSection";
 import FAQSection from "@/components/faq/FAQSection";
+import Footer from "@/components/footer/Footer";
 import MainSection from "@/components/main/MainSection";
 import KakaoMap from "@/components/map/KakaoMap";
 import MapSection from "@/components/map/MapSection";
@@ -19,6 +21,8 @@ export default function Home() {
       <SpeakerSection />
       <MapSection />
       <FAQSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }

@@ -10,9 +10,9 @@ const UpArrow = () => {
       <path
         d="M35 19.2596L19 3.234L3 19.2596"
         stroke="white"
-        stroke-width="4.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="4.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
