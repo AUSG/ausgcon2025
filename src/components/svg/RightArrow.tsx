@@ -1,8 +1,8 @@
 const RightArrow = () => {
   return (
     <svg
-      width="37"
-      height="35"
+      width="24"
+      height="24"
       viewBox="0 0 37 35"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -27,12 +27,12 @@ const ScheduleTable = () => {
                   key={name}
                   className="mx-[45px] flex border-b-[1px] py-6 last:border-b-0"
                 >
-                  <div className="flex w-1/3 flex-col">
-                    <span className="text-[45px]">{time}</span>
+                  <div className="flex w-1/3 flex-col gap-2">
+                    <span className="text-3xl">{time}</span>
                     <div className="flex gap-3">
                       {category?.map(({ name, color }) => (
                         <span
-                          className="rounded-3xl px-6 py-2 text-3xl"
+                          className="rounded-3xl px-5 py-1 text-lg"
                           style={{ background: color }}
                           key={name}
                         >
@@ -42,12 +42,12 @@ const ScheduleTable = () => {
                     </div>
                   </div>
 
-                  <span className="w-1/5 text-[36px]">{name}</span>
-                  <div className="flex w-2/5 flex-col">
+                  <span className="w-1/5 text-2xl">{name}</span>
+                  <div className="flex w-2/5 flex-col gap-2">
                     {description && (
-                      <span className="text-[36px]">{description}</span>
+                      <span className="text-2xl">{description}</span>
                     )}
-                    <span className="text-[28px]">
+                    <span className="text-xl">
                       {speaker.name} - {speaker.team}
                     </span>
                   </div>

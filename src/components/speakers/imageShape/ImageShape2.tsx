@@ -23,8 +23,8 @@ const ImageShape2 = ({ width, height, src }: ImageShape2Props) => {
 
       <image
         href={src}
-        width={width}
-        height={height}
+        width="100%"
+        height="100%"
         clipPath="url(#octagonClip)"
         preserveAspectRatio="xMidYMid slice"
       />

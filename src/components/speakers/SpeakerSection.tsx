@@ -16,14 +16,14 @@ const SPEAKER_LIST = [
   { Component: ImageSquare, src: "/image/testImage.jpeg" },
 ];
 
-const WIDTH = 274; // TODO : 반응형 적용해야함.
+const WIDTH = 200; // TODO : 반응형 적용해야함.
 
 const SpeakerSection = () => {
   return (
     <section>
       <div className="mt-[120px] text-center text-white">
-        <h2 className="text-[70px]">SPEAKERS</h2>
-        <p className="mt-[45px] text-[30px]">
+        <h2 className="text-6xl">SPEAKERS</h2>
+        <p className="mt-[45px] text-2xl">
           *더미텍스트* 아우쓱콘의 연사자들을 소개합니다.
         </p>
       </div>

@@ -23,8 +23,8 @@ const ImageShape1 = ({ height, src, width }: TProps) => {
 
       <image
         href={src}
-        width={width}
-        height={height}
+        width="100%"
+        height="100%"
         clipPath="url(#customClip)"
         preserveAspectRatio="xMidYMid slice"
       />
