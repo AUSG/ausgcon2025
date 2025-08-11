@@ -1,6 +1,5 @@
 import { Category, Speaker } from "@/constants/sessionData";
 import RightArrow from "../svg/RightArrow";
-import { useIsPc } from "@/hooks/useIsPc";
 import Modal from "../modal/Modal";
 import { useState } from "react";
 import CloseSvg from "../svg/CloseSvg";
@@ -22,7 +21,6 @@ const ScheduleItem = ({
   speaker,
   time,
 }: TProps) => {
-  const isPc = useIsPc();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (

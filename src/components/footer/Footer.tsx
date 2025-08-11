@@ -1,14 +1,11 @@
 "use client";
-import { useIsPc } from "@/hooks/useIsPc";
+
 import FacebookSvg from "../svg/FacebookSvg";
 import HomeSvg from "../svg/HomeSvg";
 import InstagramSvg from "../svg/InstagramSvg";
 import LinkedInSvg from "../svg/LinkedInSvg";
 
 const Footer = () => {
-  const isPc = useIsPc();
-  const SvgSize = isPc ? 28 : 16;
-
   return (
     <footer className="">
       <div className="flex items-center justify-between px-4 py-5 lg:px-12 lg:py-8">

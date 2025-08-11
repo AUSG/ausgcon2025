@@ -2,7 +2,6 @@
 import { useState } from "react";
 import QuestionMark from "../svg/QuestionMark";
 import UpArrow from "../svg/UpArrow";
-import { useIsPc } from "@/hooks/useIsPc";
 
 type TProps = {
   title: string;
@@ -11,7 +10,6 @@ type TProps = {
 
 const Arcodian = ({ title, description }: TProps) => {
   const [isOpen, setIsOpen] = useState(false);
-  const isPc = useIsPc();
 
   return (
     <div className="">
