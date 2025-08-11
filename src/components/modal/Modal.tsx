@@ -30,7 +30,7 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
 
   return createPortal(
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/20 backdrop-blur-[5.65px]"
+      className="backdrop-blur-[5.65px]n fixed inset-0 z-[9999] flex items-center justify-center bg-black/20 not-lg:px-3"
       onMouseDown={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}

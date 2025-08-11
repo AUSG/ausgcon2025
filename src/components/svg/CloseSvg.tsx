@@ -1,16 +1,14 @@
 type CloseSvgProps = {
-  width?: number | string;
-  height?: number | string;
+  className?: string;
 };
 
-const CloseSvg = ({ width = 24, height = 24 }: CloseSvgProps) => {
+const CloseSvg = ({ className }: CloseSvgProps) => {
   return (
     <svg
-      width={width}
-      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className} // Tailwind 크기 조정 가능
     >
       <path
         d="M22 2L12 12M12 12L2 22M12 12L2 2M12 12L22 22"

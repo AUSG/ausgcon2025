@@ -61,14 +61,14 @@ const ScheduleItem = ({
       </div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <div className="flex">
-          <div className="w-1/2">
+        <div className="flex w-full not-lg:flex-col">
+          <div className="lg:w-1/2">
             {/* TODO : 연사자 사진 추가 */}
             <img className="h-full w-full object-cover" src={speaker.picture} />
           </div>
-          <div className="flex w-1/2 flex-col p-8">
+          <div className="flex flex-col p-4 lg:w-1/2 lg:p-8">
             <div className="flex justify-between pb-8">
-              <span className="font-pretendard text-xl font-bold">
+              <span className="font-pretendard text-lg font-bold lg:text-xl">
                 {sequence}
               </span>
               <button
@@ -78,14 +78,16 @@ const ScheduleItem = ({
                   setIsModalOpen(false);
                 }}
               >
-                <CloseSvg />
+                <CloseSvg className="w-4 lg:w-6" />
               </button>
             </div>
-            <span className="pb-3 text-4xl whitespace-pre-line">{name}</span>
-            <span className="pb-8 text-2xl">
+            <span className="pb-3 text-lg whitespace-pre-line lg:text-4xl">
+              {name}
+            </span>
+            <span className="pb-4 text-base lg:pb-8 lg:text-2xl">
               {speaker.name} - {speaker.team}
             </span>
-            <span className="font-pretendard min-h-48 text-xl leading-7 font-semibold whitespace-pre-line">
+            <span className="font-pretendard text-sm leading-7 font-semibold whitespace-pre-line lg:min-h-48 lg:text-xl">
               {description}
             </span>
           </div>

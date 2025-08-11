@@ -34,9 +34,7 @@ export const sessionData: SessionData = [
       {
         time: "14:00 - 14:20",
         sequence: "1ST SESSION",
-        name: `커뮤니티 활동을 하라, 
-        그럼 당신에게 드넓은
-        기회가 펼쳐질 것이니`,
+        name: `커뮤니티 활동을 하라, 그럼 당신에게 드넓은 기회가 펼쳐질 것이니`,
         description: `- 사수 없이도 개발 실력을 키울 수 있었던 비결인 커뮤니티 활용법을 전파하려 합니다.
 - 커뮤니티는 운영자 참가자가 모두 함께 만들어 나가는 것임을 알려드리고자 합니다.`,
         category: [
