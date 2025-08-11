@@ -24,7 +24,7 @@ const ScheduleItem = ({
 }: TProps) => {
   const isPc = useIsPc();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log(isModalOpen);
+
   return (
     <div className="flex cursor-pointer" onClick={() => setIsModalOpen(true)}>
       <div className="flex w-1/3 flex-col gap-2">
