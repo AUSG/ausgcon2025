@@ -26,7 +26,7 @@ const ScheduleTable = () => {
                 return (
                   <li
                     key={name}
-                    className="mx-6 border-b-[1px] py-6 last:border-b-0 lg:mx-11"
+                    className="mr-6 ml-6 border-b-[1px] py-6 last:border-b-0 lg:mr-6 lg:ml-11"
                   >
                     <ScheduleItem
                       description={description}

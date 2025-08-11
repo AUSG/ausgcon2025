@@ -26,29 +26,39 @@ const ScheduleItem = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="flex cursor-pointer" onClick={() => setIsModalOpen(true)}>
-      <div className="flex w-1/3 flex-col gap-2">
-        <span className="text-xl lg:text-3xl">{time}</span>
-        <div className="flex gap-3 not-lg:flex-col">
-          {category?.map(({ name, color }) => (
-            <span
-              className="rounded-3xl px-5 py-1 text-lg"
-              style={{ background: color }}
-              key={name}
-            >
-              {name}
-            </span>
-          ))}
+    <div
+      className="flex cursor-pointer flex-col not-lg:gap-2 lg:flex-row"
+      onClick={() => setIsModalOpen(true)}
+    >
+      <div className="flex w-full flex-row justify-between gap-2 lg:w-2/5 lg:flex-col">
+        <div className="flex flex-row gap-2 lg:flex-col">
+          <span className="text-xl lg:text-3xl">{time}</span>
+          <div className="flex flex-row gap-2 lg:gap-3">
+            {category?.map(({ name, color }) => (
+              <span
+                className="rounded-3xl px-3 py-1 text-sm lg:px-5 lg:text-lg"
+                style={{ background: color }}
+                key={name}
+              >
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="lg:hidden">
+          <RightArrow width={isPc ? 24 : 18} />
         </div>
       </div>
-      <span className="w-1/5 text-lg lg:text-2xl">{sequence}</span>
-      <div className="flex w-2/5 flex-col gap-2">
-        {name && <span className="text-lg lg:text-2xl">{name}</span>}
-        <span className="text-base lg:text-xl">
-          {speaker.name} - {speaker.team}
-        </span>
+      <div className="flex w-full justify-between gap-5">
+        <span className="w-1/3 text-lg lg:text-xl">{sequence}</span>
+        <div className="flex w-full flex-col gap-2">
+          {name && <span className="text-lg lg:text-2xl">{name}</span>}
+          <span className="text-base lg:text-xl">
+            {speaker.name} - {speaker.team}
+          </span>
+        </div>
       </div>
-      <div className="flex flex-1 flex-row-reverse">
+      <div className="flex flex-1 flex-row-reverse not-lg:hidden">
         <RightArrow width={isPc ? 24 : 18} />
       </div>
 
