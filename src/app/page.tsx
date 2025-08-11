@@ -12,12 +12,20 @@ export default function Home() {
     <div>
       <MainSection />
       <DescriptionSection />
-      <ScheduleSection />
-      <SpeakerSection />
-      <MapSection />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
+      {/* 여기부터 배경 반복 */}
+      <div
+        className="w-full bg-repeat-y"
+        style={{
+          backgroundImage: "url('/image/sub_bg.svg')",
+        }}
+      >
+        <ScheduleSection />
+        <SpeakerSection />
+        <MapSection />
+        <FAQSection />
+        <ContactSection />
+        <Footer />
+      </div>
     </div>
   );
 }
