@@ -18,7 +18,7 @@ const MainSection = () => {
             2025.09.13 AWS KOREA 센터필드
           </div>
           <div className="mb-[86.98px] flex justify-center">
-            <div className="flex justify-center rounded-[20px] bg-[rgba(255,255,255,0.20)] px-2 py-10 shadow-[0_4px_20px_0_rgba(39,55,125,0.10)] backdrop-blur-[10px] lg:px-32 lg:py-14">
+            <div className="flex h-[196px] w-full max-w-5xl justify-center rounded-[20px] bg-[rgba(255,255,255,0.20)] px-2 py-10 shadow-[0_4px_20px_0_rgba(39,55,125,0.10)] backdrop-blur-[10px] lg:px-32 lg:py-14">
               <Timer target={"2025-09-13T09:00:00+09:00"} />
             </div>
           </div>

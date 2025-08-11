@@ -24,14 +24,14 @@ const Arcodian = ({ title, description }: TProps) => {
           >
             <div className="flex items-center">
               <span className="pr-3 lg:pr-4">
-                <QuestionMark width={isPc ? 30 : 20} />
+                <QuestionMark className="w-5 lg:w-[30px]" />
               </span>
               <span className="py-6 text-lg font-bold lg:py-7 lg:text-2xl">
                 {title}
               </span>
             </div>
             <div className={`${isOpen ? "rotate-180" : ""}`}>
-              <UpArrow width={isPc ? 24 : 18} />
+              <UpArrow className="w-[18px] lg:w-6" />
             </div>
           </button>
 

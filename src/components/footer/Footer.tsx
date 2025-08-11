@@ -23,16 +23,16 @@ const Footer = () => {
         </span>
         <div className="flex gap-2 lg:gap-7">
           <a target="_blank" href="https://ausg.me/">
-            <HomeSvg width={SvgSize} height={SvgSize} />
+            <HomeSvg className="w-4 lg:w-7" />
           </a>
           <a target="_blank" href="https://www.facebook.com/ausgkr">
-            <FacebookSvg width={SvgSize} height={SvgSize} />
+            <FacebookSvg className="w-4 lg:w-7" />
           </a>
           <a target="_blank" href="https://www.instagram.com/ausg.awskrug">
-            <InstagramSvg width={SvgSize} height={SvgSize} />
+            <InstagramSvg className="w-4 lg:w-7" />
           </a>
           <a target="_blank" href="https://www.linkedin.com/company/ausg-kr/">
-            <LinkedInSvg width={SvgSize} height={SvgSize} />
+            <LinkedInSvg className="w-4 lg:w-7" />
           </a>
         </div>
       </div>

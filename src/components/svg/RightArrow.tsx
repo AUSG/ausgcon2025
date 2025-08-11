@@ -1,13 +1,11 @@
 type RightArrowProps = {
-  width?: number;
-  height?: number;
+  className?: string; // Tailwind 크기나 색상 제어용
 };
 
-const RightArrow = ({ width = 24, height = 24 }: RightArrowProps) => {
+const RightArrow = ({ className }: RightArrowProps) => {
   return (
     <svg
-      width={width}
-      height={height}
+      className={className}
       viewBox="0 0 37 35"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

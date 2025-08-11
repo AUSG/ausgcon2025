@@ -46,7 +46,7 @@ const ScheduleItem = ({
           </div>
         </div>
         <div className="lg:hidden">
-          <RightArrow width={isPc ? 24 : 18} />
+          <RightArrow className="w-4 lg:w-6" />
         </div>
       </div>
       <div className="flex w-full justify-between gap-5">
@@ -59,7 +59,7 @@ const ScheduleItem = ({
         </div>
       </div>
       <div className="flex flex-1 flex-row-reverse not-lg:hidden">
-        <RightArrow width={isPc ? 24 : 18} />
+        <RightArrow className="w-4 lg:w-6" />
       </div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>

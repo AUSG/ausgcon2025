@@ -1,13 +1,11 @@
 type QuestionMarkProps = {
-  width?: number | string;
-  height?: number | string;
+  className?: string; // Tailwind 크기, 색상 지정
 };
 
-const QuestionMark = ({ width = 35, height = 35 }: QuestionMarkProps) => {
+const QuestionMark = ({ className }: QuestionMarkProps) => {
   return (
     <svg
-      width={width}
-      height={height}
+      className={className}
       viewBox="0 0 35 35"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
