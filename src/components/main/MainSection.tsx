@@ -3,7 +3,11 @@ import Timer from "../timer/Timer";
 
 const MainSection = () => {
   return (
-    <section className="relative h-full w-full bg-[url('/image/main_bg.png')] bg-cover bg-center bg-repeat lg:aspect-auto lg:bg-no-repeat">
+    <section className="relative h-full w-full bg-cover bg-center bg-repeat lg:aspect-auto lg:bg-no-repeat">
+      <img
+        src="/image/main_bg.svg"
+        className="absolute left-1/2 -z-10 h-full -translate-x-1/2 object-cover"
+      />
       <div className="flex w-full flex-col items-center pt-[69px]">
         <div className="w-full px-3 lg:max-w-[978px]">
           <h1 className="mb-[31.31px] flex justify-center">
@@ -37,8 +41,6 @@ const MainSection = () => {
             <img
               src="/image/ausg_logo.svg"
               className="h-auto w-[128px] lg:w-[167px]"
-              loading="lazy"
-              fetchPriority="low"
             />
           </div>
         </div>
