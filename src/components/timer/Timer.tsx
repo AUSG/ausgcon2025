@@ -45,7 +45,7 @@ const Timer = ({ target, intervalMs = 1000 }: TimerProps) => {
   }, [targetMs, intervalMs]);
 
   return (
-    <div className="flex items-center gap-2 text-xl text-white lg:gap-5 lg:text-5xl">
+    <div className="flex items-center gap-2 px-4 text-xl text-white lg:gap-5 lg:text-5xl">
       <TimeBox label="DAYS" value={pad2(left.days)} />
       :
       <TimeBox label="HOURS" value={pad2(left.hours)} />
