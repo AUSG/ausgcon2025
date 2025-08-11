@@ -14,7 +14,7 @@ const pad2 = (n: number): string => String(n).padStart(2, "0");
 
 const TimeBox = ({ label, value }: { label: string; value: string }) => (
   <div className="flex flex-col items-center gap-1 lg:gap-2">
-    <div className="">{value}</div>
+    <div>{value}</div>
     <div className="font-pretendard text-base font-semibold lg:text-lg">
       {label}
     </div>
@@ -27,8 +27,15 @@ type TimerProps = {
 };
 
 const Timer = ({ target, intervalMs = 1000 }: TimerProps) => {
-  const [mounted, setMounted] = useState(false); // ✅ 클라이언트 전용 게이트
-  useEffect(() => setMounted(true), []);
+  const [mounted, setMounted] = useState(false);
+  const [visible, setVisible] = useState(false); // ✨ 페이드인 제어
+
+  useEffect(() => {
+    setMounted(true);
+    // 마운트 직후 살짝 지연 후 visible 켜기
+    const t = setTimeout(() => setVisible(true), 50);
+    return () => clearTimeout(t);
+  }, []);
 
   const targetMs = useMemo(() => new Date(target).getTime(), [target]);
   const [left, setLeft] = useState(() => msToDHMS(targetMs - Date.now()));
@@ -40,10 +47,12 @@ const Timer = ({ target, intervalMs = 1000 }: TimerProps) => {
     return () => clearInterval(id);
   }, [targetMs, intervalMs]);
 
-  if (!mounted) return null; // 서버/프리렌더 단계에선 렌더 안 함
+  if (!mounted) return null;
 
   return (
-    <div className="flex items-center gap-2 px-4 text-xl text-white lg:gap-5 lg:text-5xl">
+    <div
+      className={`flex items-center gap-2 px-4 text-xl text-white transition-opacity duration-200 ease-out lg:gap-5 lg:text-5xl ${visible ? "opacity-100" : "opacity-0"}`}
+    >
       <TimeBox label="DAYS" value={pad2(left.days)} />:
       <TimeBox label="HOURS" value={pad2(left.hours)} />:
       <TimeBox label="MINUTES" value={pad2(left.minutes)} />:
