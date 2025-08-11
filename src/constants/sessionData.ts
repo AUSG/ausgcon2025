@@ -46,7 +46,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "박태성",
           team: "아이디어샘",
-          picture: "/image/testImage.jpeg",
+          picture: "/image/test_image.jpg",
         },
       },
       {
@@ -58,7 +58,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "김민석",
           team: "AUSG",
-          picture: "/image/testImage.jpeg",
+          picture: "/image/test_image.jpg",
         },
       },
     ],
@@ -80,7 +80,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "김창환",
           team: "파트리지시스템즈",
-          picture: "/image/testImage.jpeg",
+          picture: "/image/test_image.jpg",
         },
       },
       {
@@ -92,7 +92,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "김연수",
           team: "업스테이지",
-          picture: "/image/testImage.jpeg",
+          picture: "/image/test_image.jpg",
         },
       },
     ],
@@ -114,7 +114,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "김한수",
           team: "뱅크샐러드",
-          picture: "/image/testImage.jpeg",
+          picture: "/image/test_image.jpg",
         },
       },
       {
@@ -126,7 +126,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "정지우",
           team: "여기어때컴퍼니",
-          picture: "/image/testImage.jpeg",
+          picture: "/image/test_image.jpg",
         },
       },
       {
@@ -138,7 +138,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "변준석",
           team: "엔라이즈",
-          picture: "/image/testImage.jpeg",
+          picture: "/image/test_image.jpg",
         },
       },
     ],
