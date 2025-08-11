@@ -2,14 +2,14 @@ import Arcodian from "./Arcodian";
 
 const FAQSection = () => {
   return (
-    <section className="flex w-full flex-col items-center justify-center pb-36">
+    <section className="flex w-full flex-col items-center justify-center pb-36 not-lg:px-4">
       <div className="mb-20 text-center text-white">
-        <h2 className="mb-11 text-6xl">FAQ</h2>
-        <p className="font-pretendard text-2xl font-bold">
+        <h2 className="mb-11 text-4xl lg:text-6xl">FAQ</h2>
+        <p className="font-pretendard text-xl font-bold lg:text-2xl">
           아우쓱콘에게 자주 묻는 질문을 모았습니다
         </p>
       </div>
-      <div className="flex w-[1071px] flex-col gap-6">
+      <div className="flex w-full max-w-5xl flex-col gap-6">
         <Arcodian
           title="행사장에 주차가 가능한가요?"
           description={`-

@@ -1,5 +1,6 @@
 "use client";
 
+import { useIsPc } from "@/hooks/useIsPc";
 import { useEffect } from "react";
 
 declare global {
@@ -13,6 +14,7 @@ type TProps = {
   height?: number;
   lat?: number;
   lng?: number;
+  className?: string;
 };
 
 const KakaoMap = ({
@@ -20,7 +22,10 @@ const KakaoMap = ({
   height = 400,
   lat = 33.450701,
   lng = 126.570667,
+  className,
 }: TProps) => {
+  const isPc = useIsPc();
+
   useEffect(() => {
     // 카카오 지도 API가 로드되었는지 확인
     if (window.kakao && window.kakao.maps) {
@@ -34,8 +39,9 @@ const KakaoMap = ({
 
       const markerPosition = new window.kakao.maps.LatLng(lat, lng);
 
+      const [w, h] = isPc ? [168, 211] : [56, 70];
       const imageSrc = "/image/map_flag.png";
-      const imageSize = new window.kakao.maps.Size(168, 211);
+      const imageSize = new window.kakao.maps.Size(w, h);
       const markerImage = new window.kakao.maps.MarkerImage(
         imageSrc,
         imageSize,
@@ -52,6 +58,7 @@ const KakaoMap = ({
   return (
     <div
       id="map"
+      className={className}
       style={{
         width: "100%",
         height: "100%",

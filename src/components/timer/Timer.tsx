@@ -15,9 +15,11 @@ const msToDHMS = (
 const pad2 = (n: number): string => String(n).padStart(2, "0");
 
 const TimeBox = ({ label, value }: { label: string; value: string }) => (
-  <div className="flex flex-col items-center gap-2">
+  <div className="flex flex-col items-center gap-1 lg:gap-2">
     <div className="">{value}</div>
-    <div className="font-pretendard text-lg font-semibold">{label}</div>
+    <div className="font-pretendard text-base font-semibold lg:text-lg">
+      {label}
+    </div>
   </div>
 );
 
@@ -43,7 +45,7 @@ const Timer = ({ target, intervalMs = 1000 }: TimerProps) => {
   }, [targetMs, intervalMs]);
 
   return (
-    <div className="flex items-center gap-5 text-5xl text-white">
+    <div className="flex items-center gap-2 text-xl text-white lg:gap-5 lg:text-5xl">
       <TimeBox label="DAYS" value={pad2(left.days)} />
       :
       <TimeBox label="HOURS" value={pad2(left.hours)} />

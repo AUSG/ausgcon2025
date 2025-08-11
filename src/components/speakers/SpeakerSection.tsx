@@ -22,13 +22,13 @@ const SpeakerSection = () => {
   return (
     <section>
       <div className="mt-[120px] text-center text-white">
-        <h2 className="text-6xl">SPEAKERS</h2>
-        <p className="mt-[45px] text-2xl">
+        <h2 className="text-4xl lg:text-6xl">SPEAKERS</h2>
+        <p className="mt-[45px] text-xl lg:text-2xl">
           *더미텍스트* 아우쓱콘의 연사자들을 소개합니다.
         </p>
       </div>
       <div className="flex justify-center">
-        <div className="mt-20 grid w-[1071px] grid-cols-4 justify-items-center gap-y-20">
+        <div className="mt-20 grid w-full max-w-5xl grid-cols-2 justify-items-center gap-y-20 lg:grid-cols-4">
           {SPEAKER_LIST.map(({ Component, src }, index) => {
             return (
               <div style={{ width: WIDTH }} className="text-white" key={index}>

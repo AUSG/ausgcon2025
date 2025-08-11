@@ -13,9 +13,9 @@ const ScheduleTab = ({ activeId, list, onChange }: TProps) => {
           <button
             key={id}
             onClick={() => onChange(id)}
-            className={`${isActive ? "bg-white text-[#95B0CC]" : "text-white"} w-full border-b-[3px] border-white py-5 text-center`}
+            className={`${isActive ? "bg-white text-[#95B0CC]" : "text-white"} w-full border-b-2 border-white py-4 text-center lg:border-b-[3px] lg:py-5`}
           >
-            <span className="text-2xl">{name}</span>
+            <span className="text-xl lg:text-2xl">{name}</span>
           </button>
         );
       })}

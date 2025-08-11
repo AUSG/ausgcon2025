@@ -5,7 +5,7 @@ const MainSection = () => {
   return (
     <section className="relative h-full w-full bg-[url('/image/main_bg.png')] bg-cover bg-center bg-repeat lg:aspect-auto lg:bg-no-repeat">
       <div className="flex w-full flex-col items-center pt-[69px]">
-        <div className="max-w-[978px] px-3">
+        <div className="w-full px-3 lg:max-w-[978px]">
           <h1 className="mb-[31.31px] flex justify-center">
             <img
               fetchPriority="high"
@@ -18,7 +18,7 @@ const MainSection = () => {
             2025.09.13 AWS KOREA 센터필드
           </div>
           <div className="mb-[86.98px] flex justify-center">
-            <div className="flex justify-center rounded-[20px] bg-[rgba(255,255,255,0.20)] px-32 py-14 shadow-[0_4px_20px_0_rgba(39,55,125,0.10)] backdrop-blur-[10px]">
+            <div className="flex justify-center rounded-[20px] bg-[rgba(255,255,255,0.20)] px-2 py-10 shadow-[0_4px_20px_0_rgba(39,55,125,0.10)] backdrop-blur-[10px] lg:px-32 lg:py-14">
               <Timer target={"2025-09-13T09:00:00+09:00"} />
             </div>
           </div>
