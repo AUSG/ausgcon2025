@@ -65,7 +65,10 @@ const ScheduleItem = ({
         <div className="flex w-full not-lg:flex-col">
           <div className="lg:w-1/2">
             {/* TODO : 연사자 사진 추가 */}
-            <img className="h-full w-full object-cover" src={speaker.picture} />
+            <img
+              className="aspect-square h-full w-full object-cover"
+              src={speaker.picture}
+            />
           </div>
           <div className="flex flex-col p-4 lg:w-1/2 lg:p-8">
             <div className="flex justify-between pb-8">
