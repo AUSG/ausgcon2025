@@ -22,11 +22,14 @@ const ScheduleTable = () => {
         <div className="">
           <ul className="text-white">
             {selectedTrackData.map(
-              ({ description, name, speaker, time, category, sequence }) => {
+              (
+                { description, name, speaker, time, category, sequence },
+                index,
+              ) => {
                 return (
                   <li
-                    key={name}
-                    className="mr-6 ml-6 border-b-[1px] py-6 last:border-b-0 lg:mr-6 lg:ml-11"
+                    key={index}
+                    className="mr-4 ml-4 border-b-[1px] py-6 last:border-b-0 lg:mr-6 lg:ml-11"
                   >
                     <ScheduleItem
                       description={description}
