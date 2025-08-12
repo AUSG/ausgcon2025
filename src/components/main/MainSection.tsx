@@ -3,7 +3,7 @@ import Timer from "../timer/Timer";
 
 const MainSection = () => {
   return (
-    <section className="relative h-full w-full bg-cover bg-center bg-repeat lg:aspect-auto lg:bg-no-repeat">
+    <section className="relative h-screen w-full bg-cover bg-center bg-repeat lg:aspect-auto lg:h-full lg:bg-no-repeat">
       <img
         src="/image/main_bg.svg"
         className="absolute left-1/2 -z-10 h-full -translate-x-1/2 object-cover"
@@ -14,15 +14,15 @@ const MainSection = () => {
             <img
               fetchPriority="high"
               src="/image/2025ausgcon.png"
-              className="w-2/3"
+              className="not-lg:w-2/3 lg:h-[30vh]"
               alt="2025 AUSGCON"
             />
           </h1>
           <div className="mb-12 flex justify-center text-xl font-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
             2025.09.13 AWS KOREA 센터필드
           </div>
-          <div className="mb-[86.98px] flex justify-center">
-            <div className="flex h-[136px] w-full max-w-5xl justify-center rounded-[20px] bg-[rgba(255,255,255,0.20)] px-2 py-10 shadow-[0_4px_20px_0_rgba(39,55,125,0.10)] backdrop-blur-[10px] lg:h-[196px] lg:px-32 lg:py-14">
+          <div className="mb-[7vh] flex justify-center">
+            <div className="flex h-[136px] w-full max-w-5xl justify-center rounded-[20px] bg-[rgba(255,255,255,0.20)] px-2 py-10 shadow-[0_4px_20px_0_rgba(39,55,125,0.10)] backdrop-blur-[10px] lg:h-[24vh] lg:px-32 lg:py-14">
               <Timer target={"2025-09-13T09:00:00+09:00"} />
             </div>
           </div>
