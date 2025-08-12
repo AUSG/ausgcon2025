@@ -10,7 +10,7 @@ const ScheduleSection = () => {
         </p>
       </div>
       <div className="flex justify-center">
-        <div className="mt-[70px] flex w-full max-w-5xl justify-center px-4">
+        <div className="mt-[70px] flex w-full max-w-5xl justify-center not-lg:px-3">
           <ScheduleTable />
         </div>
       </div>

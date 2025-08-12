@@ -2,7 +2,7 @@ import TallyForm from "./TallyForm";
 
 const ContactSection = () => {
   return (
-    <section className="flex flex-col items-center bg-white bg-[url('/image/contact_bg.svg')] px-4 pt-24 pb-28">
+    <section className="flex flex-col items-center bg-white bg-[url('/image/contact_bg.svg')] pt-24 pb-28 not-lg:px-3">
       <div className="mb-20 bg-white p-4 text-center text-[#71A6D8]">
         <h2 className="mb-11 text-4xl lg:text-6xl">CONTACT US</h2>
         <p className="font-pretendard text-xl font-bold lg:text-2xl">

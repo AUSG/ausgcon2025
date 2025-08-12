@@ -1,7 +1,7 @@
 const DescriptionSection = () => {
   return (
     <section className="flex flex-row-reverse items-center bg-white bg-[url('/image/description_bg.svg')] bg-cover bg-center bg-no-repeat py-[95px]">
-      <div className="items-left my-4 flex h-fit w-[775px] flex-col justify-center px-4 text-left lg:pr-32">
+      <div className="items-left my-4 flex h-fit w-[775px] flex-col justify-center px-3 text-left lg:pr-32">
         <p className="mb-[41px] text-2xl sm:text-3xl">
           대학생과 주니어를 위한 IT 컨퍼런스!
           <br />

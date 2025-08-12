@@ -2,7 +2,7 @@ import KakaoMap from "./KakaoMap";
 
 const MapSection = () => {
   return (
-    <section className="mt-24 mb-16 flex flex-col items-center not-lg:px-4">
+    <section className="mt-24 mb-16 flex flex-col items-center not-lg:px-3">
       <h2 className="mb-20 text-center text-4xl text-white lg:text-6xl">
         HOW TO FIND US
       </h2>

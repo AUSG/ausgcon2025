@@ -2,7 +2,7 @@ import Arcodian from "./Arcodian";
 
 const FAQSection = () => {
   return (
-    <section className="flex w-full flex-col items-center justify-center pb-36 not-lg:px-4">
+    <section className="flex w-full flex-col items-center justify-center pb-36 not-lg:px-3">
       <div className="mb-20 text-center text-white">
         <h2 className="mb-11 text-4xl lg:text-6xl">FAQ</h2>
         <p className="font-pretendard text-xl font-bold lg:text-2xl">

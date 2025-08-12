@@ -25,7 +25,7 @@ const SpeakerSection = () => {
           *더미텍스트* 아우쓱콘의 연사자들을 소개합니다.
         </p>
       </div>
-      <div className="flex justify-center not-lg:px-4">
+      <div className="flex justify-center not-lg:px-3">
         <div className="mt-20 grid w-full max-w-5xl grid-cols-2 justify-items-center gap-x-4 gap-y-20 lg:grid-cols-4 lg:gap-x-18">
           {SPEAKER_LIST.map(({ Component, src }, index) => {
             return (
