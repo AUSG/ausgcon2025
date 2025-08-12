@@ -7,7 +7,7 @@ const DescriptionSection = () => {
           <br />
           “AUSGCON”(아우쓱콘)을 소개합니다
         </p>
-        <p className="font-pretendard text-xl leading-9 font-semibold sm:text-2xl">
+        <p className="font-pretendard text-lg leading-9 font-semibold sm:text-2xl">
           AUSGCON은 “IT에 대한 열정이 있는 사람들을 위한 교류의 장”이라는
           컨셉으로 열리는 오프라인 기술 컨퍼런스입니다. <br />
           주로 대학생 및 개발자를 대상으로 진행되며, 3개 트랙에서 진행하는
