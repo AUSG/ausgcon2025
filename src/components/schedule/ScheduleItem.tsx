@@ -49,7 +49,7 @@ const ScheduleItem = ({
         </div>
       </div>
       <div className="flex w-full justify-between gap-2 not-lg:flex-col lg:gap-5">
-        <span className="w-1/3 text-base lg:text-xl">{sequence}</span>
+        <span className="text-base lg:w-1/3 lg:text-xl">{sequence}</span>
         <div className="flex w-full flex-col gap-2">
           {name && <span className="text-xl lg:text-2xl">{name}</span>}
           <span className="text-lg lg:text-xl">
