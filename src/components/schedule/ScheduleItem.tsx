@@ -30,7 +30,7 @@ const ScheduleItem = ({
     >
       <div className="flex w-full flex-row justify-between gap-2 lg:w-2/5 lg:flex-col">
         <div className="flex flex-row gap-2 lg:flex-col">
-          <span className="text-xl lg:text-3xl">{time}</span>
+          <span className="text-lg lg:text-3xl">{time}</span>
           <div className="flex flex-row gap-1 lg:gap-3">
             {category?.map(({ name, color }) => (
               <div key={name}>

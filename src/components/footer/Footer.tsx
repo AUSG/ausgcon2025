@@ -11,11 +11,11 @@ const Footer = () => {
       <div className="flex items-center justify-between px-4 py-5 lg:px-12 lg:py-8">
         <img
           src="/image/ausg_logo.svg"
-          className="h-auto w-[108px] lg:w-[148px]"
+          className="h-auto w-[80px] lg:w-[148px]"
           loading="lazy"
           fetchPriority="low"
         />
-        <span className="font-pretendard text-sm text-white lg:text-xl">
+        <span className="font-pretendard text-center text-sm text-white lg:text-xl">
           @ AUSG 2025 ALL RIGHTS RESERVED
         </span>
         <div className="flex gap-2 lg:gap-7">
