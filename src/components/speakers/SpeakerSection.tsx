@@ -31,7 +31,10 @@ const SpeakerSection = () => {
             return (
               <div className="text-white" key={index}>
                 <div className="flex justify-center">
-                  <Component width={"100%"} src={src} />
+                  <Component
+                    className="w-full md:w-[80%] lg:w-full"
+                    src={src}
+                  />
                 </div>
                 <div className="mt-6 pb-2">
                   <span className="mr-[11px] text-2xl lg:text-4xl">박태성</span>

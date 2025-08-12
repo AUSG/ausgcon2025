@@ -1,20 +1,18 @@
 type TProps = {
-  width: number | string;
-  height?: number | string;
   src: string;
+  alt?: string;
+  className?: string; // Tailwind로 크기/스타일 제어
 };
 
 /**
- *  모래시계같이 생긴 모양
+ * 모래시계같이 생긴 모양
  */
-const ImageShape1 = ({ height, src, width }: TProps) => {
-  const styleWidth = typeof width === "number" ? `${width}px` : width;
-
+const ImageShape1 = ({ src, alt = "Shape image", className = "" }: TProps) => {
   return (
-    <div style={{ width: styleWidth, aspectRatio: "1 / 1" }}>
+    <div className={`aspect-square ${className}`}>
       <svg
-        width={width}
-        height={height}
+        width="100%"
+        height="100%"
         viewBox="0 0 274 274"
         xmlns="http://www.w3.org/2000/svg"
       >

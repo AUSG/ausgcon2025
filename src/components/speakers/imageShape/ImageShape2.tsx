@@ -1,19 +1,18 @@
-type ImageShape2Props = {
-  width: number | string;
-  height?: number | string;
+type TProps = {
   src: string;
+  alt?: string;
+  className?: string; // Tailwind로 크기/스타일 제어
 };
 
 /**
  * 팔각형 모양
  */
-const ImageShape2 = ({ width, height, src }: ImageShape2Props) => {
-  const styleWidth = typeof width === "number" ? `${width}px` : width;
+const ImageShape2 = ({ src, alt = "Shape image", className = "" }: TProps) => {
   return (
-    <div style={{ width: styleWidth, aspectRatio: "1 / 1" }}>
+    <div className={`aspect-square ${className}`}>
       <svg
-        width={width}
-        height={height}
+        width="100%"
+        height="100%"
         viewBox="0 0 274 274"
         xmlns="http://www.w3.org/2000/svg"
       >

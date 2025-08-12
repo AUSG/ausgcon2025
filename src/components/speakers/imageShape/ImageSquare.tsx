@@ -1,21 +1,15 @@
 type TProps = {
-  width: number | string; // px, %, 100% 모두 가능
   src: string;
   alt?: string;
+  className?: string; // Tailwind 클래스 전부 외부에서
 };
 
-const ImageSquare = ({ width, src, alt = "Square image" }: TProps) => {
-  const styleWidth = typeof width === "number" ? `${width}px` : width;
-
+const ImageSquare = ({ src, alt = "Square image", className = "" }: TProps) => {
   return (
     <img
       src={src}
       alt={alt}
-      style={{
-        width: styleWidth,
-        aspectRatio: "1 / 1", // 정사각형 비율 유지
-        objectFit: "cover",
-      }}
+      className={`aspect-square object-cover ${className}`} // 기본 정사각형 + 커버
     />
   );
 };
