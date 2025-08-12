@@ -8,7 +8,7 @@ const MainSection = () => {
         src="/image/main_bg.svg"
         className="absolute left-1/2 -z-10 h-full -translate-x-1/2 object-cover"
       />
-      <div className="flex w-full flex-col items-center pt-[69px]">
+      <div className="flex h-full w-full flex-col items-center pt-[69px]">
         <div className="w-full px-3 lg:max-w-[978px]">
           <h1 className="mb-[31.31px] flex justify-center">
             <img
@@ -37,12 +37,12 @@ const MainSection = () => {
               </p>
             </Link>
           </div>
-          <div className="flex items-center justify-center pb-[50px]">
-            <img
-              src="/image/ausg_logo.svg"
-              className="h-auto w-[128px] lg:w-[167px]"
-            />
-          </div>
+        </div>
+        <div className="flex h-full items-end justify-end pb-[50px]">
+          <img
+            src="/image/ausg_logo.svg"
+            className="h-auto w-[128px] lg:w-[167px]"
+          />
         </div>
       </div>
     </section>
