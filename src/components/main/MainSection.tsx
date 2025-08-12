@@ -6,7 +6,7 @@ const MainSection = () => {
     <section className="relative h-screen w-full bg-cover bg-center bg-repeat lg:aspect-auto lg:h-full lg:bg-no-repeat">
       <img
         src="/image/main_bg.svg"
-        className="absolute top-0 left-0 -z-10 h-full w-full object-cover object-[77%_center]"
+        className="absolute top-0 left-0 -z-10 h-full w-full object-cover object-[78%_center]"
       />
       <div className="flex w-full flex-col items-center pt-[69px]">
         <div className="w-full px-3 lg:max-w-[978px]">
