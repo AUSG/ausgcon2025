@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "AUSGCON 2025",
   description:
     "대학생&주니어를 위한 IT 컨퍼런스! “AUSGCON”(아우쓱콘)을 소개합니다.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
