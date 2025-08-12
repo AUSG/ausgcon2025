@@ -21,7 +21,7 @@ const Arcodian = ({ title, description }: TProps) => {
             onClick={() => setIsOpen((prev) => !prev)}
           >
             <div className="flex items-center">
-              <span className="pr-3 lg:pr-4">
+              <span className="pr-2 lg:pr-4">
                 <QuestionMark className="w-5 lg:w-[30px]" />
               </span>
               <span className="py-6 text-lg font-bold lg:py-7 lg:text-2xl">
@@ -29,12 +29,12 @@ const Arcodian = ({ title, description }: TProps) => {
               </span>
             </div>
             <div className={`${isOpen ? "rotate-180" : ""}`}>
-              <UpArrow className="w-[18px] lg:w-6" />
+              <UpArrow className="w-[16px] lg:w-6" />
             </div>
           </button>
 
           {isOpen && (
-            <div className="px-12 pb-6 text-lg font-normal whitespace-pre-line lg:pb-9 lg:text-2xl">
+            <div className="px-6 pb-6 text-lg font-normal whitespace-pre-line lg:px-12 lg:pb-9 lg:text-2xl">
               {description}
             </div>
           )}
