@@ -62,7 +62,7 @@ const ScheduleItem = ({
       </div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <div className="flex w-full not-lg:flex-col">
+        <div className="flex w-full not-lg:flex-col lg:w-5xl">
           <div className="lg:w-1/2">
             {/* TODO : 연사자 사진 추가 */}
             <img
