@@ -37,8 +37,10 @@ const FAQSection = () => {
         />
         <Arcodian
           title="티켓 환불은 어떻게 하나요?"
-          description={`-
-            9월 7일까지 환불 가능하며, 이후 환불은 불가능합니다.`}
+          description={
+            `` /**`-
+            9월 15일까지 환불 가능하며, 이후 환불은 불가능합니다.` */
+          }
         />
       </div>
     </section>
