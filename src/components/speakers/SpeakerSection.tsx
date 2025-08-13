@@ -1,4 +1,4 @@
-import { sessionData } from "@/constants/sessionData";
+import { Session, sessionData } from "@/constants/sessionData";
 import ImageCircle from "./imageShape/ImageCircle";
 import ImageShape1 from "./imageShape/ImageShape1";
 import ImageShape2 from "./imageShape/ImageShape2";
@@ -19,8 +19,16 @@ const IMAGE_SHAPE_LIST = [
 
 const seen = new Set<string>();
 
+// OPENING 판별(시퀀스가 OPENING이거나, 이름이 '오프닝'인 경우)
+const isOpening = (s: Session) => {
+  const seq = s.sequence?.trim().toUpperCase();
+  const name = s.name?.trim();
+  return seq === "OPENING" || /오프닝/i.test(name || "");
+};
+
 const speakers = sessionData
   .flatMap((track) => track.sessionList || [])
+  .filter((session) => !isOpening(session)) // 오프닝세션 스피커 제외
   .filter((session) => {
     const key = `${session.speaker.name}-${session.speaker.team}`;
     if (seen.has(key)) return false;
@@ -49,7 +57,7 @@ const SpeakerSection = () => {
         </p>
       </div>
       <div className="flex justify-center not-lg:px-3">
-        <div className="mt-20 grid w-full max-w-5xl grid-cols-2 justify-items-center gap-x-4 gap-y-20 lg:grid-cols-4 lg:gap-x-18">
+        <div className="mt-20 grid w-full max-w-5xl grid-cols-2 justify-items-center gap-x-4 gap-y-16 lg:grid-cols-4 lg:gap-x-18">
           {speakers.map(
             (
               {
@@ -70,15 +78,15 @@ const SpeakerSection = () => {
                       src={picture}
                     />
                   </div>
-                  <div className="mt-6 pb-2">
+                  <div className="mt-6 flex flex-col pb-2">
                     <span className="mr-[11px] text-2xl lg:text-4xl">
                       {speakerName}
                     </span>
                     <span className="text-base lg:text-xl">{speakerTeam}</span>
                   </div>
-                  {/* <p className="font-pretendard mb-3 text-base font-bold lg:text-xl">
+                  <p className="font-pretendard mb-3 text-base font-bold lg:text-xl">
                     {title}
-                  </p> */}
+                  </p>
                   {/* <p className="font-pretendard text-sm font-medium">
                     {description}
                   </p> */}

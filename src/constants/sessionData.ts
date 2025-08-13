@@ -9,7 +9,7 @@ export type Speaker = {
   picture: string;
 };
 
-type Session = {
+export type Session = {
   time: string;
   sequence: string; // "1ST SESSION"
   name: string;
