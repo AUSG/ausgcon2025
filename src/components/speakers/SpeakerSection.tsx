@@ -30,7 +30,7 @@ const speakers = sessionData
   .flatMap((track) => track.sessionList || [])
   .filter((session) => !isOpening(session)) // 오프닝세션 스피커 제외
   .filter((session) => {
-    const key = `${session.speaker.name}-${session.speaker.team}`;
+    const key = `${session?.speaker?.name}-${session?.speaker?.team}`;
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -40,9 +40,9 @@ const speakers = sessionData
     return {
       title: session.name,
       description: session.description,
-      speakerName: session.speaker.name,
-      speakerTeam: session.speaker.team,
-      picture: session.speaker.picture,
+      speakerName: session?.speaker?.name,
+      speakerTeam: session?.speaker?.team,
+      picture: session?.speaker?.picture,
       Component,
     };
   });
@@ -75,7 +75,7 @@ const SpeakerSection = () => {
                   <div className="flex justify-center">
                     <Component
                       className="w-full md:w-[80%] lg:w-full"
-                      src={picture}
+                      src={picture ?? ""}
                     />
                   </div>
                   <div className="mt-6 flex flex-col pb-2">

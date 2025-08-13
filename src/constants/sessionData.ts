@@ -15,7 +15,7 @@ export type Session = {
   name: string;
   description: string;
   category?: Category[];
-  speaker: Speaker;
+  speaker?: Speaker;
 };
 
 type Track = {
@@ -36,11 +36,11 @@ export const sessionData: SessionData = [
         sequence: "OPENING",
         name: `오프닝`,
         description: ` `,
-        speaker: {
-          name: "도정민",
-          team: "AUSG",
-          picture: "/image/test_image.jpg",
-        },
+        // speaker: {
+        //   name: "도정민",
+        //   team: "AUSG",
+        //   picture: "/image/test_image.jpg",
+        // },
       },
       {
         time: "14:30 - 15:00",
@@ -118,11 +118,11 @@ export const sessionData: SessionData = [
         sequence: "OPENING",
         name: `오프닝`,
         description: ` `,
-        speaker: {
-          name: "도정민",
-          team: "AUSG",
-          picture: "/image/test_image.jpg",
-        },
+        // speaker: {
+        //   name: "도정민",
+        //   team: "AUSG",
+        //   picture: "/image/test_image.jpg",
+        // },
       },
       {
         time: "14:30 - 15:00",
@@ -193,11 +193,11 @@ export const sessionData: SessionData = [
         sequence: "OPENING",
         name: `오프닝`,
         description: ` `,
-        speaker: {
-          name: "도정민",
-          team: "AUSG",
-          picture: "/image/test_image.jpg",
-        },
+        // speaker: {
+        //   name: "도정민",
+        //   team: "AUSG",
+        //   picture: "/image/test_image.jpg",
+        // },
       },
       {
         time: "14:30 - 15:00",
