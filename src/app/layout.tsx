@@ -21,18 +21,18 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
-  openGraph: {
-    type: "website",
-    url: "https://2025.ausg.me",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 600,
-        alt: "AUSGCON 2025",
-      },
-    ],
-  },
+  // openGraph: {
+  //   type: "website",
+  //   url: "https://2025.ausg.me",
+  //   images: [
+  //     {
+  //       url: "/opengraph-image.png",
+  //       width: 1200,
+  //       height: 600,
+  //       alt: "AUSGCON 2025",
+  //     },
+  //   ],
+  // },
 };
 
 export default function RootLayout({
