@@ -3,6 +3,7 @@
 :root {
   --background: linear-gradient(237deg, #92bde7, #bdd8ec);
   --foreground: #171717;
+  color-scheme: light;
 }
 
 @font-face {
