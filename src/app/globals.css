@@ -3,7 +3,6 @@
 :root {
   --background: linear-gradient(237deg, #92bde7, #bdd8ec);
   --foreground: #171717;
-  color-scheme: light;
 }
 
 @font-face {
@@ -60,13 +59,6 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-pretendard: "Pretendard", sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 @layer base {
