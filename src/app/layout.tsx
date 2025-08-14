@@ -47,6 +47,10 @@ export default function RootLayout({
           type="text/javascript"
           src="//dapi.kakao.com/v2/maps/sdk.js?appkey=57572c2d403c6adbf0d4d07da7197ee6"
         ></script>
+        <meta
+          name="google-site-verification"
+          content="Z0XBCnHU25K0blB8FL2nZgSs5NtTpMt-hPFXvuMNr7Q"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
