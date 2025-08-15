@@ -153,16 +153,15 @@ export const sessionData: SessionData = [
       {
         time: "15:10 - 15:40",
         sequence: "2ND SESSION",
-        name: "성장도 설계가 필요합니다 - 고민한만큼 올라갈 수 있는 성장 이야기",
-        description: `- 성장도 치밀한 고민과 설계가 필요해요. 고민한 만큼 올라갈 수 있거든요. 
-- 이 세션에서는 성장하지 않으면 도태되는 스타트업 업계에서 15년동안 살아남기 위한 성장을 해온 경험으로 어떻게 성장을 설계할 수 있는지, 그리고 성장의 팁과 노하우 등을 이야기합니다.`,
+        name: "Vibe Coding과 Serverless : 스타트업의 최전선에서 기술로 성장하기",
+        description: `AI스타트업 Vibe Coding과 Serverless 같은 최신 기술 스택을 적극적으로 활용하는 이유와 어떻게 성장에 도움이 되는지 이야기합니다.`,
         category: [
           { name: "경험", color: "#F3DA89" },
           { name: "커리어", color: "#94F389" },
         ],
         speaker: {
           name: "박상운",
-          team: "AWS Hero",
+          team: "RECON Labs / AWS Hero",
           picture: "/image/speaker_박상운.jpg",
         },
       },
