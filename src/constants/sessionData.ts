@@ -107,7 +107,7 @@ export const sessionData: SessionData = [
       },
       {
         time: "17:20 - 18:00",
-        sequence: "4TH SESSION",
+        sequence: "5TH SESSION",
         name: "더 나은 개발자/엔지니어가 되기 위한 소프트 스킬",
         description: `게임 업계 개발자로 일하며 스타트업에서 넷마블, 넥슨을 거쳐 AWS에 오기까지 겪었던 시행착오와 지속적으로 성장할 수 있었던 경험을 공유합니다. (업무를 대하는 태도, 커뮤니티, 스터디, 사이드프로젝트 등)`,
         category: [
@@ -307,7 +307,7 @@ export const sessionData: SessionData = [
       },
       {
         time: "17:20 - 18:00",
-        sequence: "4TH SESSION",
+        sequence: "5TH SESSION",
         name: "더 나은 개발자/엔지니어가 되기 위한 소프트 스킬",
         description: `게임 업계 개발자로 일하며 스타트업에서 넷마블, 넥슨을 거쳐 AWS에 오기까지 겪었던 시행착오와 지속적으로 성장할 수 있었던 경험을 공유합니다. (업무를 대하는 태도, 커뮤니티, 스터디, 사이드프로젝트 등)`,
         category: [
