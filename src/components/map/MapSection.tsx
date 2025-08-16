@@ -34,12 +34,6 @@ const MapSection = () => {
               확인하여 이용하시면 됩니다.
             </span>
           </div>
-          <div className="flex gap-3 pb-3 not-lg:flex-col lg:gap-9">
-            <span className="font-extrabold lg:w-[70px]">자가용</span>
-            <span className="font-medium">
-              센터필드 건물 주차장을 이용할 수 있습니다.
-            </span>
-          </div>
         </div>
       </div>
     </section>
