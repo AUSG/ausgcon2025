@@ -75,7 +75,7 @@ const SpeakerSection = () => {
                   <div className="flex justify-center">
                     <Component
                       className="w-full md:w-[80%] lg:w-full"
-                      src={picture ?? ""}
+                      src={picture ?? "/image/speaker_default.png"}
                     />
                   </div>
                   <div className="mt-6 flex flex-col pb-2">

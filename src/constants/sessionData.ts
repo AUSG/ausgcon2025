@@ -6,7 +6,7 @@ export type Category = {
 export type Speaker = {
   name: string;
   team: string;
-  picture: string;
+  picture?: string;
 };
 
 export type Session = {
@@ -194,7 +194,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "원대영",
           team: "DEVSISTERS",
-          picture: "/image/test_image.jpg",
+          // picture: "/image/speaker_default.png",
         },
       },
       {

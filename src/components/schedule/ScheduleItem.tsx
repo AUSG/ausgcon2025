@@ -80,7 +80,7 @@ const ScheduleItem = ({
             {speaker && (
               <img
                 className="aspect-square h-full w-full object-cover"
-                src={speaker.picture}
+                src={speaker?.picture ?? "/image/speaker_default.png"}
               />
             )}
           </div>
