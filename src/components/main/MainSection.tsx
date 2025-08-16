@@ -27,9 +27,9 @@ const MainSection = () => {
             </div>
           </div>
           <div className="mb-20 flex items-center justify-center">
-            {/* TODO : 참가하러가기 링크수정 */}
             <Link
-              href="/a"
+              target="_blank"
+              href="https://event-us.kr/awskrug/event/110245"
               className="flex h-[50px] w-[220px] items-center justify-center gap-[6px] rounded-3xl bg-white text-[18px] leading-[26px] text-[#141414] sm:h-[58px] sm:w-[250px] sm:gap-[8px] sm:rounded-[7px] sm:px-[40px] sm:py-[6px] sm:text-[20px] sm:leading-[28px] md:h-[64px] md:w-[280px] md:gap-[9px] md:rounded-[8px] md:px-[48px] md:py-[6.5px] md:text-[22px] md:leading-[30px] lg:h-[69.5px] lg:w-[308px] lg:gap-[9.263px] lg:rounded-[8px] lg:px-[55.579px] lg:py-[6.947px] lg:text-[24px] lg:leading-[32.421px]"
             >
               <p>
