@@ -17,22 +17,19 @@ export const metadata: Metadata = {
   title: "AUSGCON 2025",
   description:
     "대학생&주니어를 위한 IT 컨퍼런스! “AUSGCON”(아우쓱콘)을 소개합니다.",
-  robots: {
-    index: false,
-    follow: false,
+
+  openGraph: {
+    type: "website",
+    url: "https://2025.ausg.me",
+    images: [
+      {
+        url: "/opengraph_image.png",
+        width: 1200,
+        height: 600,
+        alt: "AUSGCON 2025",
+      },
+    ],
   },
-  // openGraph: {
-  //   type: "website",
-  //   url: "https://2025.ausg.me",
-  //   images: [
-  //     {
-  //       url: "/opengraph-image.png",
-  //       width: 1200,
-  //       height: 600,
-  //       alt: "AUSGCON 2025",
-  //     },
-  //   ],
-  // },
 };
 
 export default function RootLayout({
