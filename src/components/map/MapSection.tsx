@@ -18,7 +18,8 @@ const MapSection = () => {
       <div className="flex flex-col text-start text-white">
         <div className="mt-11">
           <span className="text-2xl lg:text-3xl">
-            서울특별시 강남구 테헤란로 231 센터필드 EAST 18층
+            서울특별시 강남구 테헤란로 231
+            <br className="sm:hidden" /> 센터필드 EAST 18층
           </span>
         </div>
         <div className="font-pretendard mt-6 text-xl lg:text-2xl">
