@@ -15,7 +15,7 @@ const pad2 = (n: number): string => String(n).padStart(2, "0");
 const TimeBox = ({ label, value }: { label: string; value: string }) => (
   <div className="flex flex-col items-center gap-1 lg:gap-2">
     <div>{value}</div>
-    <div className="font-pretendard text-base font-semibold lg:text-lg">
+    <div className="font-pretendard text-sm font-semibold md:text-base lg:text-lg">
       {label}
     </div>
   </div>
@@ -51,7 +51,7 @@ const Timer = ({ target, intervalMs = 1000 }: TimerProps) => {
 
   return (
     <div
-      className={`flex items-center gap-2 px-4 text-xl text-white transition-opacity duration-200 ease-out lg:gap-5 lg:text-5xl ${visible ? "opacity-100" : "opacity-0"}`}
+      className={`flex items-center gap-2 px-4 text-xl text-white transition-opacity duration-200 ease-out sm:text-3xl md:text-4xl lg:gap-5 lg:text-5xl ${visible ? "opacity-100" : "opacity-0"}`}
     >
       <TimeBox label="DAYS" value={pad2(left.days)} />:
       <TimeBox label="HOURS" value={pad2(left.hours)} />:
