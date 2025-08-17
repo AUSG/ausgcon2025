@@ -24,7 +24,7 @@ const Arcodian = ({ title, description }: TProps) => {
               <span className="pr-2 lg:pr-4">
                 <QuestionMark className="w-5 lg:w-[30px]" />
               </span>
-              <span className="py-6 text-lg font-bold lg:py-7 lg:text-2xl">
+              <span className="py-6 text-base font-bold lg:py-7 lg:text-2xl">
                 {title}
               </span>
             </div>
