@@ -152,8 +152,8 @@ export const sessionData: SessionData = [
       {
         time: "15:10 - 15:40",
         sequence: "2ND SESSION",
-        name: "Vibe Coding과 Serverless : 스타트업의 최전선에서 기술로 성장하기",
-        description: `AI스타트업 Vibe Coding과 Serverless 같은 최신 기술 스택을 적극적으로 활용하는 이유와 어떻게 성장에 도움이 되는지 이야기합니다.`,
+        name: "Serverless와 Vibe Coding: 스타트업의 최전선에서 기술로 성장하기",
+        description: `AI스타트업 Serverless와 Vibe Coding 같은 최신 기술 스택을 적극적으로 활용하는 이유와 어떻게 성장에 도움이 되는지 이야기합니다.`,
         category: [
           { name: "백엔드", color: "#F38989" },
           { name: "커리어", color: "#94F389" },
