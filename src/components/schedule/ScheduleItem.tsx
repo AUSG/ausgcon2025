@@ -99,15 +99,15 @@ const ScheduleItem = ({
                 <CloseSvg className="w-4 lg:w-6" />
               </button>
             </div>
-            <span className="pb-3 text-lg whitespace-pre-line lg:text-4xl">
+            <span className="pb-2 text-lg whitespace-pre-line lg:pb-3 lg:text-4xl">
               {name}
             </span>
             {speaker && (
-              <span className="pb-4 text-base lg:pb-8 lg:text-2xl">
+              <span className="pb-3 text-base lg:pb-8 lg:text-2xl">
                 {speaker.name} - {speaker.team}
               </span>
             )}
-            <span className="font-pretendard text-sm leading-7 font-semibold whitespace-pre-line lg:min-h-48 lg:text-xl">
+            <span className="font-pretendard text-sm leading-6 font-semibold whitespace-pre-line lg:min-h-48 lg:text-xl lg:leading-7">
               {description}
             </span>
           </div>
