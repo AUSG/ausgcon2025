@@ -36,10 +36,10 @@ export const sessionData: SessionData = [
         sequence: "OPENING",
         name: `오프닝`,
         description: ` `,
-        speaker: {
-          name: "도정민",
-          team: "AUSG 9th Organizer",
-        },
+        // speaker: {
+        //   name: "도정민",
+        //   team: "AUSG 9th Organizer",
+        // },
       },
       {
         time: "14:30 - 15:00",

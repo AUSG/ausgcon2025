@@ -34,7 +34,7 @@ const Arcodian = ({ title, description }: TProps) => {
           </button>
 
           {isOpen && (
-            <div className="px-6 pb-6 text-lg font-normal whitespace-pre-line lg:px-12 lg:pb-9 lg:text-2xl">
+            <div className="px-6 pb-6 text-base font-normal whitespace-pre-line lg:px-12 lg:pb-9 lg:text-2xl">
               {description}
             </div>
           )}

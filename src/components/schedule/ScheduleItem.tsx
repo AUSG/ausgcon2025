@@ -31,14 +31,14 @@ const ScheduleItem = ({
         !isModalBlocking && setIsModalOpen(true);
       }}
     >
-      <div className="flex w-full flex-row justify-between gap-2 lg:w-2/5 lg:flex-col">
+      <div className="flex w-full flex-row justify-between gap-1 lg:w-2/5 lg:flex-col lg:gap-2">
         <div className="flex flex-row gap-2 lg:flex-col">
           <span className="text-lg lg:text-3xl">{time}</span>
-          <div className="flex flex-row gap-1 lg:gap-2">
+          <div className="flex flex-row gap-[2px] lg:gap-2">
             {category?.map(({ name, color }) => (
               <div key={name}>
                 <span
-                  className="rounded-3xl px-2 py-1 text-xs lg:px-3 lg:text-lg"
+                  className="rounded-3xl px-[6px] py-1 text-[11px] lg:px-3 lg:text-lg"
                   style={{ background: color }}
                 >
                   {name}

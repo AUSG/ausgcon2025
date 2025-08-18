@@ -23,16 +23,16 @@ const MapSection = () => {
           </span>
         </div>
         <div className="font-pretendard mt-6 text-xl lg:text-2xl">
-          <div className="flex gap-3 pb-3 not-lg:flex-col lg:gap-9">
+          <div className="flex gap-2 pb-3 not-lg:flex-col lg:gap-9">
             <span className="font-extrabold lg:w-[70px]">지하철</span>
-            <span className="font-medium">
+            <span className="font-medium not-lg:text-lg">
               지하철 2호선과 분당선을 이용, 역삼역 8번 출구로 나와서 도보로 약
               5분 거리에 있습니다.
             </span>
           </div>
-          <div className="flex gap-3 pb-3 not-lg:flex-col lg:gap-9">
+          <div className="flex gap-2 pb-3 not-lg:flex-col lg:gap-9">
             <span className="font-extrabold lg:w-[70px]">버스</span>
-            <span className="font-medium">
+            <span className="font-medium not-lg:text-lg">
               역삼역 주변에는 다양한 버스 노선이 지나므로, 정류장 위치와 노선을
               확인하여 이용하시면 됩니다.
             </span>
