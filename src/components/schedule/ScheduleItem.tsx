@@ -85,7 +85,7 @@ const ScheduleItem = ({
             )}
           </div>
           <div className="flex flex-col p-4 lg:w-1/2 lg:p-8">
-            <div className="flex justify-between pb-8">
+            <div className="flex justify-between pb-5 lg:pb-8">
               <span className="font-pretendard text-lg font-bold lg:text-xl">
                 {sequence}
               </span>
