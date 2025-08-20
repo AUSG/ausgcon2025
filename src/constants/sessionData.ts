@@ -193,7 +193,7 @@ export const sessionData: SessionData = [
         speaker: {
           name: "원대영",
           team: "DEVSISTERS",
-          // picture: "/image/speaker_default.png",
+          picture: "/image/speaker_원대영.png",
         },
       },
       {
